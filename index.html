@@ -5,8 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ghina's Nutrition Books</title>
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Montserrat', sans-serif;
             margin: 0;
             padding: 0;
             background-color: #f5f5f5;
@@ -17,6 +18,15 @@
             color: white;
             padding: 1em 0;
             text-align: center;
+        }
+        header img {
+            width: 50px;
+            vertical-align: middle;
+        }
+        header h1 {
+            display: inline;
+            font-size: 2em;
+            margin-left: 10px;
         }
         .container {
             width: 80%;
@@ -80,13 +90,33 @@
         .book img {
             max-width: 100%;
         }
+        .btn {
+            background-color: #00796b;
+            color: white;
+            border: none;
+            padding: 0.75em 1.5em;
+            text-decoration: none;
+            display: inline-block;
+            margin-top: 1em;
+            cursor: pointer;
+        }
+        .btn:hover {
+            background-color: #005f56;
+        }
+        .food-icons {
+            text-align: center;
+            margin-top: 2em;
+        }
+        .food-icons img {
+            width: 50px;
+            margin: 0 10px;
+        }
     </style>
 </head>
 <body>
     <header>
-        <div class="container">
-            <h1>Ghina's Healthy Recipe Books</h1>
-        </div>
+        <img src="logo.png" alt="Logo">
+        <h1>Ghina's Healthy Recipe Books</h1>
     </header>
     <div class="hero">
         <div class="container">
@@ -96,22 +126,39 @@
     </div>
     <div id="main" class="container">
         <h2>About Me</h2>
-        <p>Hi, I'm Ghina! I studied nutrition and am currently a master student in Germany. I am passionate about healthy eating and love to share my knowledge through my books.</p>
+        <p>Hello and welcome! My name is Ghina, and I am passionate about the transformative power of nutrition. I have a rich academic background in nutrition and am currently pursuing my master's degree in Germany. My journey in the world of healthy eating has been driven by a deep commitment to helping others achieve their health goals through balanced and delicious recipes.</p>
+        
+        <h2>My Mission</h2>
+        <p>In today's fast-paced world, maintaining a healthy diet can be challenging. My mission is to simplify healthy eating and make it accessible to everyone. Through my books, I aim to share easy-to-follow, nutritious recipes that not only taste great but also promote overall well-being.</p>
+
+        <h2>What I Offer</h2>
+        <p><strong>Healthy Recipe Books:</strong> Explore my collection of books filled with wholesome recipes, practical tips, and nutritional insights. Each book is crafted with care, ensuring that you have the best tools to lead a healthier lifestyle.</p>
+
+        <h2>Why Choose My Books?</h2>
+        <p><strong>Expertise in Nutrition:</strong> With a strong educational background and ongoing research in nutrition, my books are grounded in science and real-world application.</p>
+        <p><strong>Delicious and Nutritious:</strong> Every recipe is designed to be both healthy and flavorful, proving that nutritious food can also be incredibly satisfying.</p>
+        <p><strong>Accessible Ingredients:</strong> I focus on using ingredients that are easy to find, making it simple for you to incorporate healthy eating into your daily routine.</p>
+
         <h2>My Books</h2>
         <div class="books-section">
             <div class="book">
                 <img src="book1.jpg" alt="Book 1">
                 <h3>Book Title 1</h3>
                 <p>Description of the first book about healthy recipes and food.</p>
-                <button>Buy Now</button>
+                <a href="book1.pdf" class="btn" download>Download Book</a>
             </div>
             <div class="book">
                 <img src="book2.jpg" alt="Book 2">
                 <h3>Book Title 2</h3>
                 <p>Description of the second book about healthy recipes and food.</p>
-                <button>Buy Now</button>
+                <a href="book2.pdf" class="btn" download>Download Book</a>
             </div>
         </div>
+    </div>
+    <div class="food-icons">
+        <img src="icon1.png" alt="Icon 1">
+        <img src="icon2.png" alt="Icon 2">
+        <img src="icon3.png" alt="Icon 3">
     </div>
     <div class="translate-buttons">
         <button onclick="translateToEnglish()">English</button>
@@ -138,6 +185,7 @@
     </script>
 </body>
 </html>
+
 
     </script>
 </body>
