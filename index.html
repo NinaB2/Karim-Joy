@@ -3,143 +3,83 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ghina's Nutrition Books</title>
+    <title>Salamat - Your Health Companion</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
         body {
-            font-family: 'Montserrat', sans-serif;
+            font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f5f5f5;
-            color: #333;
-        }
-        header {
             background-color: #00796b;
             color: white;
+        }
+        header {
+            background-color: #004d40;
             padding: 1em 0;
             text-align: center;
-        }
-        header img {
-            width: 50px;
-            vertical-align: middle;
-        }
-        header h1 {
-            display: inline;
-            font-size: 2em;
-            margin-left: 10px;
         }
         .container {
             width: 80%;
             margin: auto;
-            overflow: hidden;
-        }
-        #main {
             padding: 2em 0;
         }
-        .book {
-            border: 1px solid #ddd;
-            margin-bottom: 1em;
-            padding: 1em;
-            background-color: white;
+        .logo {
+            width: 50px;
+            vertical-align: middle;
         }
-        h1, h2, h3 {
-            color: #00796b;
+        .title {
+            font-size: 2em;
+            margin-left: 10px;
+            display: inline;
         }
-        .footer {
-            background-color: #00796b;
-            color: white;
-            text-align: center;
-            padding: 1em 0;
-            margin-top: 2em;
-        }
-        .translate-buttons {
-            margin-top: 1em;
-            text-align: center;
-        }
-        .translate-buttons button {
-            background-color: #004d40;
-            color: white;
-            border: none;
-            padding: 0.5em 1em;
-            margin: 0 0.5em;
-            cursor: pointer;
-        }
-        .translate-buttons button:hover {
-            background-color: #00332b;
-        }
-        .hero {
-            background-color: #004d40;
-            color: white;
-            padding: 2em 0;
-            text-align: center;
-        }
-        .hero h1 {
-            margin: 0;
-            font-size: 2.5em;
-        }
-        .books-section {
+        .books-section, .blogs-section {
             display: flex;
             flex-wrap: wrap;
             justify-content: space-around;
         }
-        .book {
+        .book, .blog {
             flex: 1 1 45%;
             box-sizing: border-box;
             margin: 1em;
+            background-color: #009688;
+            padding: 1em;
+            border-radius: 5px;
+            text-align: center;
         }
-        .book img {
+        .book img, .blog img {
             max-width: 100%;
+            border-radius: 5px;
         }
-        .btn {
-            background-color: #00796b;
-            color: white;
-            border: none;
-            padding: 0.75em 1.5em;
-            text-decoration: none;
-            display: inline-block;
-            margin-top: 1em;
+        .language-selector {
+            text-align: center;
+            margin-bottom: 2em;
+        }
+        .language-selector i {
+            font-size: 1.5em;
+            margin: 0 10px;
             cursor: pointer;
         }
-        .btn:hover {
-            background-color: #005f56;
-        }
-        .food-icons {
-            text-align: center;
+        .profile {
+            padding: 2em;
+            background-color: #009688;
+            border-radius: 5px;
             margin-top: 2em;
-        }
-        .food-icons img {
-            width: 50px;
-            margin: 0 10px;
         }
     </style>
 </head>
 <body>
     <header>
-        <img src="logo.png" alt="Logo">
-        <h1>Ghina's Healthy Recipe Books</h1>
-    </header>
-    <div class="hero">
         <div class="container">
-            <h1>Welcome to Ghina's Nutrition World</h1>
-            <p>Your source for healthy recipes and nutrition books</p>
+            <img src="logo.png" alt="Logo" class="logo">
+            <h1 class="title">Salamat - Your Health Companion</h1>
         </div>
-    </div>
-    <div id="main" class="container">
-        <h2>About Me</h2>
-        <p>Hello and welcome! My name is Ghina, and I am passionate about the transformative power of nutrition. I have a rich academic background in nutrition and am currently pursuing my master's degree in Germany. My journey in the world of healthy eating has been driven by a deep commitment to helping others achieve their health goals through balanced and delicious recipes.</p>
-        
-        <h2>My Mission</h2>
-        <p>In today's fast-paced world, maintaining a healthy diet can be challenging. My mission is to simplify healthy eating and make it accessible to everyone. Through my books, I aim to share easy-to-follow, nutritious recipes that not only taste great but also promote overall well-being.</p>
-
-        <h2>What I Offer</h2>
-        <p><strong>Healthy Recipe Books:</strong> Explore my collection of books filled with wholesome recipes, practical tips, and nutritional insights. Each book is crafted with care, ensuring that you have the best tools to lead a healthier lifestyle.</p>
-
-        <h2>Why Choose My Books?</h2>
-        <p><strong>Expertise in Nutrition:</strong> With a strong educational background and ongoing research in nutrition, my books are grounded in science and real-world application.</p>
-        <p><strong>Delicious and Nutritious:</strong> Every recipe is designed to be both healthy and flavorful, proving that nutritious food can also be incredibly satisfying.</p>
-        <p><strong>Accessible Ingredients:</strong> I focus on using ingredients that are easy to find, making it simple for you to incorporate healthy eating into your daily routine.</p>
-
-        <h2>My Books</h2>
+    </header>
+    <div class="container">
+        <div class="language-selector">
+            <i class="fas fa-globe" title="English" onclick="changeLanguage('en')"></i>
+            <i class="fas fa-globe" title="German" onclick="changeLanguage('de')"></i>
+            <i class="fas fa-globe" title="Arabic" onclick="changeLanguage('ar')"></i>
+        </div>
         <div class="books-section">
             <div class="book">
                 <img src="book1.jpg" alt="Book 1">
@@ -154,39 +94,32 @@
                 <a href="book2.pdf" class="btn" download>Download Book</a>
             </div>
         </div>
+        <div class="blogs-section">
+            <div class="blog">
+                <img src="blog1.jpg" alt="Blog 1">
+                <h3>Blog Title 1</h3>
+                <p>Description of the first blog post about health tips.</p>
+                <a href="#" class="btn">Read More</a>
+            </div>
+            <div class="blog">
+                <img src="blog2.jpg" alt="Blog 2">
+                <h3>Blog Title 2</h3>
+                <p>Description of the second blog post about healthy lifestyle.</p>
+                <a href="#" class="btn">Read More</a>
+            </div>
+        </div>
+        <div class="profile">
+            <h2>About Salamat</h2>
+            <p>Salamat, which means "health" in Arabic, is your ultimate destination for all things related to health and wellness. Whether you're looking for nutritious recipes, helpful tips, or insightful articles, Salamat is here to guide you on your journey towards a healthier lifestyle.</p>
+        </div>
     </div>
-    <div class="food-icons">
-        <img src="icon1.png" alt="Icon 1">
-        <img src="icon2.png" alt="Icon 2">
-        <img src="icon3.png" alt="Icon 3">
-    </div>
-    <div class="translate-buttons">
-        <button onclick="translateToEnglish()">English</button>
-        <button onclick="translateToGerman()">German</button>
-        <button onclick="translateToArabic()">Arabic</button>
-    </div>
-    <footer class="footer">
-        <p>Contact: ghina@example.com</p>
-    </footer>
 
     <script>
-        function translateToEnglish() {
-            // Implement translation to English
-            alert("This will translate the page to English.");
-        }
-        function translateToGerman() {
-            // Implement translation to German
-            alert("This will translate the page to German.");
-        }
-        function translateToArabic() {
-            // Implement translation to Arabic
-            alert("This will translate the page to Arabic.");
-        }
-    </script>
-</body>
-</html>
+        function changeLanguage(lang) {
+            // Implement language change functionality
+            alert("Changing language to " + lang + ".");
+}
+</script>
 
-
-    </script>
 </body>
 </html>
