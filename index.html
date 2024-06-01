@@ -57,6 +57,29 @@
         .translate-buttons button:hover {
             background-color: #00332b;
         }
+        .hero {
+            background-color: #004d40;
+            color: white;
+            padding: 2em 0;
+            text-align: center;
+        }
+        .hero h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+        .books-section {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+        .book {
+            flex: 1 1 45%;
+            box-sizing: border-box;
+            margin: 1em;
+        }
+        .book img {
+            max-width: 100%;
+        }
     </style>
 </head>
 <body>
@@ -65,21 +88,30 @@
             <h1>Ghina's Healthy Recipe Books</h1>
         </div>
     </header>
+    <div class="hero">
+        <div class="container">
+            <h1>Welcome to Ghina's Nutrition World</h1>
+            <p>Your source for healthy recipes and nutrition books</p>
+        </div>
+    </div>
     <div id="main" class="container">
         <h2>About Me</h2>
         <p>Hi, I'm Ghina! I studied nutrition and am currently a master student in Germany. I am passionate about healthy eating and love to share my knowledge through my books.</p>
         <h2>My Books</h2>
-        <div class="book">
-            <h3>Book Title 1</h3>
-            <p>Description of the first book about healthy recipes and food.</p>
-            <button>Buy Now</button>
+        <div class="books-section">
+            <div class="book">
+                <img src="book1.jpg" alt="Book 1">
+                <h3>Book Title 1</h3>
+                <p>Description of the first book about healthy recipes and food.</p>
+                <button>Buy Now</button>
+            </div>
+            <div class="book">
+                <img src="book2.jpg" alt="Book 2">
+                <h3>Book Title 2</h3>
+                <p>Description of the second book about healthy recipes and food.</p>
+                <button>Buy Now</button>
+            </div>
         </div>
-        <div class="book">
-            <h3>Book Title 2</h3>
-            <p>Description of the second book about healthy recipes and food.</p>
-            <button>Buy Now</button>
-        </div>
-        <!-- Add more books as needed -->
     </div>
     <div class="translate-buttons">
         <button onclick="translateToEnglish()">English</button>
@@ -103,6 +135,10 @@
             // Implement translation to Arabic
             alert("This will translate the page to Arabic.");
         }
+    </script>
+</body>
+</html>
+
     </script>
 </body>
 </html>
