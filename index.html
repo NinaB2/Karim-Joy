@@ -16,6 +16,7 @@
     }
 
     .logo {
+        width: 150px;
         animation: spin 5s linear infinite;
     }
 
@@ -50,7 +51,7 @@
     .buy-now-btn {
         display: inline-block;
         padding: 10px 20px;
-        background-color: #ffca28;
+        background-color: #0047ab; /* Cobalt blue color */
         color: #fff;
         border-radius: 20px;
         text-decoration: none;
@@ -58,44 +59,71 @@
     }
 
     .buy-now-btn:hover {
-        background-color: #ffa000;
+        background-color: #002080; /* Darker shade of blue on hover */
+    }
+
+    /* Language Icons */
+    .language-icons img {
+        width: 50px; /* Increase icon size */
+        height: 50px; /* Increase icon size */
+        margin-right: 20px; /* Increase spacing */
+    }
+
+    /* Social Media Icons */
+    .social-media-icons img {
+        width: 40px; /* Increase icon size */
+        height: 40px; /* Increase icon size */
+        margin-right: 20px; /* Increase spacing */
+    }
+
+    /* About Section */
+    .about-section {
+        margin-top: 50px;
+        padding: 20px;
+        background-color: #e3f2fd; /* Light blue background */
+        border-radius: 10px;
+    }
+
+    .about-section h2 {
+        color: #0047ab; /* Cobalt blue heading */
     }
 </style>
 </head>
 <body>
 
 <!-- Logo -->
-<img src="logo.png" alt="Karim Joy Logo" class="logo">
+<img src="logo.gif" alt="Karim Joy Logo" class="logo" style="position: absolute; top: 20px; left: 20px;">
 
 <!-- Catchy Sentences -->
-<div class="catchy-sentences">
+<div class="catchy-sentences" style="margin-top: 200px;">
     <p class="sentence1">Do you have a belly?</p>
     <p class="sentence2">Bored from diets and want to get rid of it?</p>
     <p class="sentence3">Here's how!</p>
 </div>
 
 <!-- Buy Now Button -->
-<a href="buy-now.html" class="buy-now-btn">Buy Now</a>
+<a href="buy-now.html" class="buy-now-btn" style="position: absolute; top: 300px; left: 20px;">Buy Now</a>
 
 <!-- Language Icons -->
-<div class="language-icons">
+<div class="language-icons" style="position: absolute; top: 20px; right: 20px;">
     <img src="arabic-icon.png" alt="Arabic Icon">
     <img src="german-icon.png" alt="German Icon">
     <img src="english-icon.png" alt="English Icon">
 </div>
 
 <!-- Social Media Icons -->
-<div class="social-media-icons">
-    <a href="https://instagram.com/karimjoy"><img src="instagram-icon.png" alt="Instagram"></a>
-    <a href="https://pinterest.com/karimjoy"><img src="pinterest-icon.png" alt="Pinterest"></a>
-    <a href="https://wa.me/1234567890"><img src="whatsapp-icon.png" alt="WhatsApp"></a>
+<div class="social-media-icons" style="position: absolute; top: 80px; right: 20px;">
+    <img src="instagram-icon.png" alt="Instagram">
+    <img src="pinterest-icon.png" alt="Pinterest">
+    <img src="whatsapp-icon.png" alt="WhatsApp">
 </div>
 
 <!-- About Section -->
-<section class="about-section">
+<section class="about-section" style="position: absolute; top: 400px; left: 20px; width: 80%;">
     <h2>About Karim Joy</h2>
     <p>Welcome to Karim Joy, where we believe in living a healthier and happier life. Our mission is to provide you with the tools and resources you need to achieve your health and wellness goals. Join us on this journey to discover joy in every aspect of your life.</p>
 </section>
 
 </body>
 </html>
+
