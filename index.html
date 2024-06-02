@@ -10,8 +10,8 @@
         font-family: Arial, sans-serif;
         margin: 0;
         padding: 0;
-        background-color: #f0f0f0;
-        color: #333;
+        background-color: #0047ab; /* Cobalt blue color */
+        color: #fff;
     }
 
     .container {
@@ -23,33 +23,18 @@
     /* Logo */
     .logo {
         width: 150px;
+        display: block;
+        margin: 20px auto; /* Center logo */
     }
 
     /* Catchy Sentences */
     .catchy-sentences {
         text-align: center;
-        margin-top: 50px;
     }
 
     .catchy-sentences p {
-        font-size: 20px;
+        font-size: 24px;
         margin: 10px 0;
-    }
-
-    /* Buy Now Button */
-    .buy-now-btn {
-        display: inline-block;
-        padding: 10px 20px;
-        background-color: #0047ab; /* Cobalt blue color */
-        color: #fff;
-        border-radius: 20px;
-        text-decoration: none;
-        transition: background-color 0.3s;
-        font-size: 18px;
-    }
-
-    .buy-now-btn:hover {
-        background-color: #002080; /* Darker shade of blue on hover */
     }
 
     /* Language Icons */
@@ -64,16 +49,48 @@
         margin: 0 10px; /* Add spacing between icons */
     }
 
-    /* Social Media Icons */
-    .social-media-icons {
-        text-align: center;
+    /* Blog Section */
+    .blog-section {
         margin-top: 50px;
+        padding: 20px;
+        background-color: #003366; /* Dark blue background */
+        border-radius: 10px;
     }
 
-    .social-media-icons img {
-        width: 40px; /* Increase icon size */
-        height: 40px; /* Increase icon size */
-        margin: 0 10px; /* Add spacing between icons */
+    .blog-section h2 {
+        color: #fff;
+        text-align: center;
+    }
+
+    .blog-section ul {
+        list-style-type: none;
+        padding: 0;
+    }
+
+    .blog-section li {
+        margin-bottom: 10px;
+    }
+
+    /* Books Section */
+    .books-section {
+        margin-top: 50px;
+        padding: 20px;
+        background-color: #003366; /* Dark blue background */
+        border-radius: 10px;
+    }
+
+    .books-section h2 {
+        color: #fff;
+        text-align: center;
+    }
+
+    .books-section ul {
+        list-style-type: none;
+        padding: 0;
+    }
+
+    .books-section li {
+        margin-bottom: 10px;
     }
 
     /* Contact Form */
@@ -93,17 +110,18 @@
     }
 
     .contact-form input[type="submit"] {
-        background-color: #0047ab; /* Cobalt blue color */
-        color: #fff;
+        background-color: #fff;
+        color: #0047ab; /* Cobalt blue color */
         border: none;
         border-radius: 20px;
         padding: 10px 20px;
         cursor: pointer;
-        transition: background-color 0.3s;
+        transition: background-color 0.3s, color 0.3s;
     }
 
     .contact-form input[type="submit"]:hover {
-        background-color: #002080; /* Darker shade of blue on hover */
+        background-color: #0047ab; /* Cobalt blue color */
+        color: #fff;
     }
 </style>
 </head>
@@ -112,7 +130,7 @@
 <div class="container">
 
     <!-- Logo -->
-    <img src="logo.png" alt="Karim Joy Logo" class="logo">
+    <img src="logo.gif" alt="Karim Joy Logo" class="logo">
 
     <!-- Catchy Sentences -->
     <div class="catchy-sentences">
@@ -121,9 +139,6 @@
         <p>Here's how!</p>
     </div>
 
-    <!-- Buy Now Button -->
-    <a href="buy-now.html" class="buy-now-btn">Buy Now</a>
-
     <!-- Language Icons -->
     <div class="language-icons">
         <img src="arabic-icon.png" alt="Arabic Icon">
@@ -131,12 +146,25 @@
         <img src="english-icon.png" alt="English Icon">
     </div>
 
-    <!-- Social Media Icons -->
-    <div class="social-media-icons">
-        <img src="instagram-icon.png" alt="Instagram">
-        <img src="pinterest-icon.png" alt="Pinterest">
-        <img src="whatsapp-icon.png" alt="WhatsApp">
-    </div>
+    <!-- Blog Section -->
+    <section class="blog-section">
+        <h2>Latest Blogs</h2>
+        <ul>
+            <li>Blog Post 1</li>
+            <li>Blog Post 2</li>
+            <li>Blog Post 3</li>
+        </ul>
+    </section>
+
+    <!-- Books Section -->
+    <section class="books-section">
+        <h2>Featured Books</h2>
+        <ul>
+            <li>Book 1</li>
+            <li>Book 2</li>
+            <li>Book 3</li>
+        </ul>
+    </section>
 
     <!-- Contact Form -->
     <div class="contact-form">
