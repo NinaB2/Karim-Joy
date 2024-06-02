@@ -1,124 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Salamat - Your Health Companion</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #00796b;
-            color: white;
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Karim Joy</title>
+<style>
+    /* Logo Animation */
+    @keyframes spin {
+        0% {
+            transform: rotate(0deg);
         }
-        header {
-            background-color: #004d40;
-            padding: 1em 0;
-            text-align: left; /* Changed to left align the content */
+        100% {
+            transform: rotate(360deg);
         }
-        .container {
-            width: 80%;
-            margin: auto;
-            padding: 2em 0;
+    }
+
+    .logo {
+        animation: spin 5s linear infinite;
+    }
+
+    /* Catchy Sentences */
+    .catchy-sentences p {
+        opacity: 0;
+        animation: fadeIn 2s forwards;
+    }
+
+    @keyframes fadeIn {
+        0% {
+            opacity: 0;
         }
-        .logo {
-            width: 100px; /* Adjust the size of the logo */
-            vertical-align: middle;
+        100% {
+            opacity: 1;
         }
-        .title {
-            font-size: 2em;
-            margin-left: 20px;
-            display: inline;
-        }
-        .books-section, .blogs-section {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-around;
-        }
-        .book, .blog {
-            flex: 1 1 45%;
-            box-sizing: border-box;
-            margin: 1em;
-            background-color: #009688;
-            padding: 1em;
-            border-radius: 5px;
-            text-align: center;
-        }
-        .book img, .blog img {
-            max-width: 100%;
-            border-radius: 5px;
-        }
-        .language-selector {
-            text-align: center;
-            margin-bottom: 2em;
-        }
-        .language-selector i {
-            font-size: 1.5em;
-            margin: 0 10px;
-            cursor: pointer;
-        }
-        .profile {
-            padding: 2em;
-            background-color: #009688;
-            border-radius: 5px;
-            margin-top: 2em;
-        }
-    </style>
+    }
+
+    .sentence1 {
+        animation-delay: 0s;
+    }
+
+    .sentence2 {
+        animation-delay: 3s;
+    }
+
+    .sentence3 {
+        animation-delay: 6s;
+    }
+
+    /* Buy Now Button */
+    .buy-now-btn {
+        display: inline-block;
+        padding: 10px 20px;
+        background-color: #ffca28;
+        color: #fff;
+        border-radius: 20px;
+        text-decoration: none;
+        transition: background-color 0.3s;
+    }
+
+    .buy-now-btn:hover {
+        background-color: #ffa000;
+    }
+</style>
 </head>
 <body>
-    <header>
-        <div class="container">
-            <img src="logo.png" alt="Logo" class="logo">
-            <h1 class="title">Salamat - Your Health Companion</h1>
-        </div>
-    </header>
-    <div class="container">
-        <div class="language-selector">
-            <i class="fas fa-globe" title="English" onclick="changeLanguage('en')"></i>
-            <i class="fas fa-globe" title="German" onclick="changeLanguage('de')"></i>
-            <i class="fas fa-globe" title="Arabic" onclick="changeLanguage('ar')"></i>
-        </div>
-        <div class="books-section">
-            <div class="book">
-                <img src="book1.jpg" alt="Book 1">
-                <h3>Book Title 1</h3>
-                <p>Description of the first book about healthy recipes and food.</p>
-                <a href="book1.pdf" class="btn" download>Download Book</a>
-            </div>
-            <div class="book">
-                <img src="book2.jpg" alt="Book 2">
-                <h3>Book Title 2</h3>
-                <p>Description of the second book about healthy recipes and food.</p>
-                <a href="book2.pdf" class="btn" download>Download Book</a>
-            </div>
-        </div>
-        <div class="blogs-section">
-            <div class="blog">
-                <img src="blog1.jpg" alt="Blog 1">
-                <h3>Blog Title 1</h3>
-                <p>Description of the first blog post about health tips.</p>
-                <a href="#" class="btn">Read More</a>
-            </div>
-            <div class="blog">
-                <img src="blog2.jpg" alt="Blog 2">
-                <h3>Blog Title 2</h3>
-                <p>Description of the second blog post about healthy lifestyle.</p>
-                <a href="#" class="btn">Read More</a>
-            </div>
-        </div>
-        <div class="profile">
-            <h2>About Salamat</h2>
-            <p>Salamat, which means "health" in Arabic, is your ultimate destination for all things related to health and wellness. Whether you're looking for nutritious recipes, helpful tips, or insightful articles, Salamat is here to guide you on your journey towards a healthier lifestyle.</p>
-        </div>
-    </div>
 
-    <script>
-        function changeLanguage(lang) {
-            // Implement language change functionality
-            alert("Changing language to " + lang + ".");
-        }
-    </script>
+<!-- Logo -->
+<img src="logo.png" alt="Karim Joy Logo" class="logo">
+
+<!-- Catchy Sentences -->
+<div class="catchy-sentences">
+    <p class="sentence1">Do you have a belly?</p>
+    <p class="sentence2">Bored from diets and want to get rid of it?</p>
+    <p class="sentence3">Here's how!</p>
+</div>
+
+<!-- Buy Now Button -->
+<a href="buy-now.html" class="buy-now-btn">Buy Now</a>
+
+<!-- Language Icons -->
+<div class="language-icons">
+    <img src="arabic-icon.png" alt="Arabic Icon">
+    <img src="german-icon.png" alt="German Icon">
+    <img src="english-icon.png" alt="English Icon">
+</div>
+
+<!-- Social Media Icons -->
+<div class="social-media-icons">
+    <a href="https://instagram.com/karimjoy"><img src="instagram-icon.png" alt="Instagram"></a>
+    <a href="https://pinterest.com/karimjoy"><img src="pinterest-icon.png" alt="Pinterest"></a>
+    <a href="https://wa.me/1234567890"><img src="whatsapp-icon.png" alt="WhatsApp"></a>
+</div>
+
+<!-- About Section -->
+<section class="about-section">
+    <h2>About Karim Joy</h2>
+    <p>Welcome to Karim Joy, where we believe in living a healthier and happier life. Our mission is to provide you with the tools and resources you need to achieve your health and wellness goals. Join us on this journey to discover joy in every aspect of your life.</p>
+</section>
+
 </body>
 </html>
