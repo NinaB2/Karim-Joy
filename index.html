@@ -1,183 +1,133 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Karim Joy</title>
-<style>
-    /* General Styles */
-    body {
-        font-family: Arial, sans-serif;
-        margin: 0;
-        padding: 0;
-        background-color: #0047ab; /* Cobalt blue color */
-        color: #fff;
-    }
-
-    .container {
-        max-width: 1200px;
-        margin: 0 auto;
-        padding: 20px;
-    }
-
-    /* Logo */
-    .logo {
-        width: 150px;
-        display: block;
-        margin: 20px auto; /* Center logo */
-    }
-
-    /* Catchy Sentences */
-    .catchy-sentences {
-        text-align: center;
-    }
-
-    .catchy-sentences p {
-        font-size: 24px;
-        margin: 10px 0;
-    }
-
-    /* Language Icons */
-    .language-icons {
-        text-align: center;
-        margin-top: 50px;
-    }
-
-    .language-icons img {
-        width: 50px; /* Increase icon size */
-        height: 50px; /* Increase icon size */
-        margin: 0 10px; /* Add spacing between icons */
-    }
-
-    /* Blog Section */
-    .blog-section {
-        margin-top: 50px;
-        padding: 20px;
-        background-color: #003366; /* Dark blue background */
-        border-radius: 10px;
-    }
-
-    .blog-section h2 {
-        color: #fff;
-        text-align: center;
-    }
-
-    .blog-section ul {
-        list-style-type: none;
-        padding: 0;
-    }
-
-    .blog-section li {
-        margin-bottom: 10px;
-    }
-
-    /* Books Section */
-    .books-section {
-        margin-top: 50px;
-        padding: 20px;
-        background-color: #003366; /* Dark blue background */
-        border-radius: 10px;
-    }
-
-    .books-section h2 {
-        color: #fff;
-        text-align: center;
-    }
-
-    .books-section ul {
-        list-style-type: none;
-        padding: 0;
-    }
-
-    .books-section li {
-        margin-bottom: 10px;
-    }
-
-    /* Contact Form */
-    .contact-form {
-        margin-top: 50px;
-        text-align: center;
-    }
-
-    .contact-form input[type="text"],
-    .contact-form textarea {
-        width: 100%;
-        padding: 10px;
-        margin-bottom: 20px;
-        border: 1px solid #ccc;
-        border-radius: 5px;
-        box-sizing: border-box;
-    }
-
-    .contact-form input[type="submit"] {
-        background-color: #fff;
-        color: #0047ab; /* Cobalt blue color */
-        border: none;
-        border-radius: 20px;
-        padding: 10px 20px;
-        cursor: pointer;
-        transition: background-color 0.3s, color 0.3s;
-    }
-
-    .contact-form input[type="submit"]:hover {
-        background-color: #0047ab; /* Cobalt blue color */
-        color: #fff;
-    }
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kooky Karamel</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #ffcc80;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+        header img {
+            height: 80px;
+            float: left;
+            margin-right: 10px;
+        }
+        header h1 {
+            font-size: 2.5em;
+            margin: 0;
+        }
+        header p {
+            font-size: 1.2em;
+            margin: 5px 0 0;
+        }
+        nav {
+            margin: 20px 0;
+            text-align: center;
+        }
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #333;
+            font-size: 1.1em;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .highlight {
+            font-size: 1.5em;
+            text-align: center;
+            margin: 20px 0;
+        }
+        .sections {
+            display: flex;
+            justify-content: space-around;
+            margin: 20px 0;
+        }
+        .section {
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            padding: 20px;
+            width: 45%;
+            text-align: center;
+        }
+        .section img {
+            width: 100px;
+            height: 100px;
+        }
+        footer {
+            background-color: #ffcc80;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+        .languages {
+            display: flex;
+            justify-content: center;
+            margin: 20px 0;
+        }
+        .languages img {
+            width: 30px;
+            height: 30px;
+            margin: 0 10px;
+        }
+    </style>
 </head>
 <body>
-
-<div class="container">
-
-    <!-- Logo -->
-    <img src="logo.gif" alt="Karim Joy Logo" class="logo">
-
-    <!-- Catchy Sentences -->
-    <div class="catchy-sentences">
-        <p>Do you have a belly?</p>
-        <p>Bored from diets and want to get rid of it?</p>
-        <p>Here's how!</p>
+    <header>
+        <img src="logo.gif" alt="Kooky Karamel Logo">
+        <h1>Kooky Karamel</h1>
+        <p>Delightfully Sweet, Wonderfully Kooky!</p>
+    </header>
+    <nav>
+        <a href="#about">About</a>
+        <a href="#blogs">Blogs</a>
+        <a href="#books">Books</a>
+    </nav>
+    <div class="container">
+        <div class="highlight">
+            <p>"Do you have a belly? Bored from diets and want to get rid of it? Here's how!"</p>
+            <button onclick="window.location.href='#books'">Buy Now New Book!</button>
+        </div>
+        <div class="sections">
+            <div class="section" id="blogs">
+                <h2>Blogs</h2>
+                <p>Read our latest blogs on healthy eating and fun recipes.</p>
+                <img src="blog-icon.png" alt="Blog Icon">
+            </div>
+            <div class="section" id="books">
+                <h2>Books</h2>
+                <p>Check out our range of healthy recipe books.</p>
+                <img src="book-icon.png" alt="Book Icon">
+            </div>
+        </div>
+        <div class="languages">
+            <img src="english-icon.png" alt="English">
+            <img src="german-icon.png" alt="German">
+            <img src="arabic-icon.png" alt="Arabic">
+        </div>
     </div>
-
-    <!-- Language Icons -->
-    <div class="language-icons">
-        <img src="arabic-icon.png" alt="Arabic Icon">
-        <img src="german-icon.png" alt="German Icon">
-        <img src="english-icon.png" alt="English Icon">
-    </div>
-
-    <!-- Blog Section -->
-    <section class="blog-section">
-        <h2>Latest Blogs</h2>
-        <ul>
-            <li>Blog Post 1</li>
-            <li>Blog Post 2</li>
-            <li>Blog Post 3</li>
-        </ul>
-    </section>
-
-    <!-- Books Section -->
-    <section class="books-section">
-        <h2>Featured Books</h2>
-        <ul>
-            <li>Book 1</li>
-            <li>Book 2</li>
-            <li>Book 3</li>
-        </ul>
-    </section>
-
-    <!-- Contact Form -->
-    <div class="contact-form">
-        <h2>Contact Us</h2>
-        <form action="#" method="post">
-            <input type="text" name="name" placeholder="Your Name" required><br>
-            <input type="text" name="email" placeholder="Your Email" required><br>
-            <textarea name="message" rows="5" placeholder="Your Message" required></textarea><br>
-            <input type="submit" value="Send Message">
-        </form>
-    </div>
-
-</div>
-
+    <footer>
+        <p>Follow us on</p>
+        <a href="https://www.instagram.com"><img src="instagram-icon.png" alt="Instagram"></a>
+        <a href="https://www.pinterest.com"><img src="pinterest-icon.png" alt="Pinterest"></a>
+        <a href="https://www.whatsapp.com"><img src="whatsapp-icon.png" alt="WhatsApp"></a>
+    </footer>
 </body>
 </html>
