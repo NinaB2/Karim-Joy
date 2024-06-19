@@ -6,22 +6,22 @@
     <title>Kooky Karamel</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Arial', sans-serif;
             background-color: #f4f4f9;
             color: #333;
             margin: 0;
             padding: 0;
         }
         header {
-            background-color: #ffcc80;
+            background-color: #0047ab; /* Cobalt blue */
             color: #fff;
             padding: 20px;
-            text-align: center;
+            display: flex;
+            align-items: center;
         }
         header img {
             height: 80px;
-            float: left;
-            margin-right: 10px;
+            margin-right: 20px;
         }
         header h1 {
             font-size: 2.5em;
@@ -38,8 +38,16 @@
         nav a {
             margin: 0 15px;
             text-decoration: none;
-            color: #333;
+            color: #0047ab;
             font-size: 1.1em;
+            border: 2px solid #0047ab;
+            padding: 10px;
+            border-radius: 5px;
+            transition: background-color 0.3s, color 0.3s;
+        }
+        nav a:hover {
+            background-color: #0047ab;
+            color: #fff;
         }
         .container {
             max-width: 1200px;
@@ -50,32 +58,47 @@
             font-size: 1.5em;
             text-align: center;
             margin: 20px 0;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
         }
-        .sections {
-            display: flex;
-            justify-content: space-around;
-            margin: 20px 0;
+        .highlight button {
+            background-color: #0047ab;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            font-size: 1.2em;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .highlight button:hover {
+            background-color: #002f74;
         }
         .section {
             background-color: #fff;
             border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
             padding: 20px;
-            width: 45%;
-            text-align: center;
+            margin: 20px 0;
         }
-        .section img {
-            width: 100px;
-            height: 100px;
+        .section h2 {
+            font-size: 2em;
+            margin: 0;
+            color: #0047ab;
+        }
+        .section p {
+            font-size: 1.2em;
+            margin: 10px 0;
         }
         footer {
-            background-color: #ffcc80;
+            background-color: #0047ab;
             color: #fff;
             text-align: center;
             padding: 10px 0;
-            position: fixed;
+            position: relative;
             width: 100%;
-            bottom: 0;
         }
         .languages {
             display: flex;
@@ -87,47 +110,48 @@
             height: 30px;
             margin: 0 10px;
         }
+        .social-icons img {
+            width: 30px;
+            height: 30px;
+            margin: 0 10px;
+        }
     </style>
 </head>
 <body>
     <header>
-        <img src="new-logo.png" alt="Kooky Karamel Logo"> <!-- Updated the logo source -->
-        <h1>Kooky Karamel</h1>
-        <p>Delightfully Sweet, Wonderfully Kooky!</p>
+        <img src="images/new-logo.png" alt="Kooky Karamel Logo"> <!-- Updated the logo source -->
+        <div>
+            <h1>Kooky Karamel</h1>
+            <p>Delightfully Sweet, Wonderfully Kooky!</p>
+        </div>
     </header>
     <nav>
-        <a href="#about">About</a>
         <a href="#blogs">Blogs</a>
-        <a href="#books">Books</a>
     </nav>
     <div class="container">
         <div class="highlight">
             <p>"Do you have a belly? Bored from diets and want to get rid of it? Here's how!"</p>
-            <button onclick="window.location.href='#books'">Buy Now New Book!</button>
+            <button onclick="window.location.href='#blogs'">Buy Now New Book!</button>
         </div>
-        <div class="sections">
-            <div class="section" id="blogs">
-                <h2>Blogs</h2>
-                <p>Read our latest blogs on healthy eating and fun recipes.</p>
-                <img src="blog-icon.png" alt="Blog Icon">
-            </div>
-            <div class="section" id="books">
-                <h2>Books</h2>
-                <p>Check out our range of healthy recipe books.</p>
-                <img src="book-icon.png" alt="Book Icon">
-            </div>
+        <div class="section" id="blogs">
+            <h2>Blogs</h2>
+            <p>Read our latest blogs on healthy eating and fun recipes.</p>
+            <!-- Add blog content here -->
         </div>
         <div class="languages">
-            <img src="english-icon.png" alt="English">
-            <img src="german-icon.png" alt="German">
-            <img src="arabic-icon.png" alt="Arabic">
+            <img src="images/english-icon.png" alt="English">
+            <img src="images/german-icon.png" alt="German">
+            <img src="images/arabic-icon.png" alt="Arabic">
         </div>
     </div>
     <footer>
         <p>Follow us on</p>
-        <a href="https://www.instagram.com"><img src="instagram-icon.png" alt="Instagram"></a>
-        <a href="https://www.pinterest.com"><img src="pinterest-icon.png" alt="Pinterest"></a>
-        <a href="https://www.whatsapp.com"><img src="whatsapp-icon.png" alt="WhatsApp"></a>
+        <div class="social-icons">
+            <a href="https://www.instagram.com"><img src="images/instagram-icon.png" alt="Instagram"></a>
+            <a href="https://www.pinterest.com"><img src="images/pinterest-icon.png" alt="Pinterest"></a>
+            <a href="https://www.whatsapp.com"><img src="images/whatsapp-icon.png" alt="WhatsApp"></a>
+        </div>
     </footer>
 </body>
 </html>
+
